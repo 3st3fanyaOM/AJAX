@@ -5,9 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
   window.document.getElementById("btn").addEventListener("click", (e) => {
     e.preventDefault();
     const pokeID = document.getElementById("idPokemon").value;
-    if(!pokeID){
-        alert("debes introducir un número");
-        return;
+    if (!pokeID) {
+      alert("debes introducir un número");
+      return;
     }
     fetch(url + pokeID)
       .then((response) => response.json())

@@ -14,7 +14,11 @@ window.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         console.log(data);
         divResultado.innerHTML = "";
-        divResultado.innerHTML = `<h2>${data.name}</h2><p><b>Hablilidades</b></p>`;
+        imagen = document.createElement("img");
+        imagen.src = data.sprites.front_default;
+        divResultado.innerHTML = `<h2>${data.name}</h2>`;
+        divResultado.appendChild(imagen);
+        divResultado.innerHTML += `<p><b>Hablilidades</b></p>`;
         lista = document.createElement("ul");
         divResultado.appendChild(lista);
         habilidades = data.abilities;

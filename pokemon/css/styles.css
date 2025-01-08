@@ -8,9 +8,11 @@
 
 body {
   font-family: "Pokemon", sans-serif;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
   background-color: #f4f4f9;
-  color: #333;
-  margin: 0;
+  color: #e0600a;
+  /* margin: 0; */
   padding: 0;
   display: flex;
   justify-content: center;

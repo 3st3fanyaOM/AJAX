@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
       const data = await response.json();
       const personajes = data.results;
       personajes.forEach((e) => {
-        divPersonaje = document.createElement("div");
+        divPersonaje = document.createElement("div");//CREO UN DIV XA KDA PERS, DNTRO D RECORRIDO
         imgPersonaje = document.createElement("img");
         divInfo = document.createElement("Div");
 
